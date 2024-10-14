@@ -10,6 +10,7 @@ public class PageDTO {
 	private int totalPages;
 	private long totalElements;
 	private List<Word> content;
+	
 	public int getPage() {
 		return page;
 	}

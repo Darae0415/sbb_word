@@ -7,4 +7,9 @@
     <select id="getWordById" resultType="com.mysite.sbbpage.Word">
         SELECT id, word FROM page_tb WHERE id = #{id}
     </select>
+    <select id="countTotal" resultType="Integer">
+		SELECT count(*) FROM page_tb
+		<!-- count(*) : 해당 테이블(page_tb)에 모든 행을 세는 SQL함수 
+		(*)은 모든 컬럼(렬)을 대상으로 한거지만 실질적으론 행의 개수만 반환 -->
+	</select>
 </mapper>
